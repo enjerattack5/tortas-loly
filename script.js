@@ -113,7 +113,7 @@ function buildWhatsappMessage(){
   const total = cart.reduce((sum, i) => sum + i.price * i.qty, 0);
   msg += `%0ATotal: ${money(total)}%0A`;
   if(name) msg += `%0ANombre: ${encodeURIComponent(name)}`;
-  msg += `%0A%0A¿Tiempo de entrega y forma de pago?`;
+ // msg += `%0A%0A¿Tiempo de entrega y forma de pago?`;
   return msg;
 }
 

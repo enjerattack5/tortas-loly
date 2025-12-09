@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tortas Loly • Sabor auténtico de Tenosique</title>
+  <meta name="description" content="Tortas Loly: menú, pedidos por WhatsApp, ubicación y horarios en Tenosique." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo">TL</div>
+        <div class="title">Tortas Loly</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero-card">
+      <h1>El sabor auténtico de Tenosique</h1>
+      <p>Tortas generosas, ingredientes frescos y atención rápida. Pide por WhatsApp y pásala por tu antojo.</p>
+      <div class="actions">
+        <a class="btn btn-primary" id="heroWhatsapp" href="#">Pedir por WhatsApp</a>
+        <a class="btn btn-outline" href="#menu">Ver menú</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <!-- Imagen opcional; puedes quitarla si no la necesitas -->
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1400&auto=format&fit=crop" alt="Torta deliciosa" />
+    </div>
+  </section>
+
+  <!-- Menú y Carrito -->
+  <main class="container">
+    <section class="section" id="menu">
+      <h2>Menú</h2>
+      <p class="muted">Elige tus favoritas y arma tu pedido. Puedes ajustar cantidades y enviar por WhatsApp.</p>
+
+      <div class="grid">
+        <!-- Menú -->
+        <div class="card">
+          <div class="menu-list" id="menuList"></div>
+        </div>
+
+        <!-- Carrito -->
+        <aside class="card">
+          <h3>Tu pedido</h3>
+          <div class="cart-list" id="cartList"></div>
+
+          <div class="total">
+            <span>Total</span>
+            <span class="amount" id="cartTotal">$0.00 MXN</span>
+          </div>
+
+          <input class="input" id="clientName" type="text" placeholder="Tu nombre (opcional)" />
+          <button class="btn btn-primary checkout" id="checkoutBtn">Enviar por WhatsApp</button>
+          <button class="btn btn-light" id="clearCartBtn">Vaciar pedido</button>
+
+          <p class="tiny muted">Al enviar, se abrirá WhatsApp con tu pedido listo para confirmar.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Info -->
+    <section class="section info" id="ubicacion">
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Ubicación</h3>
+          <p>Calle Benito Juárez #123, Tenosique, Tabasco.</p>
+        </div>
+        <div class="info-card">
+          <h3>Horarios</h3>
+          <p>Lunes a sábado: 9:00 AM – 6:00 PM<br>Domingo: cerrado</p>
+        </div>
+        <div class="info-card" id="contacto">
+          <h3>Contacto</h3>
+          <p>WhatsApp: <a href="#" id="inlineWhatsapp">Pedir ahora</a><br>Facebook: Tortas Loly</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="card testimonials">
+        <blockquote>“Tortas abundantes y sabor casero. Volveré.” — Ana M.</blockquote>
+        <blockquote>“La de milanesa está brutal y la salsa verde es top.” — Carlos R.</blockquote>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © <span id="year"></span> Tortas Loly. Todos los derechos reservados.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
